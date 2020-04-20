@@ -7,14 +7,42 @@
 </head>
 
 <body>
-	<h3>이미지</h3>
-	<img src="cherry_flower.jpg" title="꽃" width="400">
- 	<hr width = "100%">
-	<h3>오디오</h3>
-	<audio src ="music.mp3" controls></audio>
-	<hr width = "100%">
-	<h3>비디오</h3>
-	<video src="rain.mp4" type="video/mp4" width="400" controls>
-	</video>
-</body>
+	<form action="" method="get">
+	<table border="1" >
+		<tr>
+			<td align="center">이름</td>
+			<td> <input type="text" name="name"> </td>
+			<td>학번</td>
+			<td> <input type="text" name="number"> </td>
+		</tr>
+		<tr>
+			<td align="center">성별</td>
+			<td colspan="3"> <input type="radio" name="gender" value="남자" checked="checked" />남
+							 <input type="radio" name="gender" value="여자"/>여
+			</td>	
+		</tr>
+		<tr>
+			<td align="center">좋아하는 계절</td>
+			<td colspan="3"> 
+				<select name="season">
+					<option value="spring">봄</option>
+					<option value="summer">여름</option>
+					<option value="autumn">가을</option>
+					<option value="winter">겨울</option>	
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">취미</td>
+			<td colspan="3">
+				<input type="checkbox" name="hobby" value="독서"/>독서
+				<input type="checkbox" name="hobby" value="운동"/>운동
+				<input type="checkbox" name="hobby" value="영화감상"/>영화감상
+				<input type="checkbox" name="hobby" value="음악감상"/>음악감상
+				<input type="checkbox" name="hobby" value="기타"/>기타
+			</td>
+		</tr>
+	</table>
+	<input type="submit" value="전송">
+	</form>
 </html>
